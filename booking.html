@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRAFTSVILLA – Bestilling</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html" class="logo">CRAFTSVILLA</a>
+            <ul>
+                <li><a href="./index.html">Hjem</a></li>
+                <li><a href="./booking.html" class="active">Bestilling</a></li>
+                <li><a href="./gallery.html">Galleri</a></li>
+                <li><a href="./feedback.html">Tilbakemelding</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Bestill et verksted</h1>
+            <p>
+                Velg en kunstform og fyll ut skjemaet. Vi kontakter deg for å
+                bekrefte plassen din.
+            </p>
+        </div>
+
+        <div class="page">
+            <h2>Velg kunstform</h2>
+            <div class="workshop-options">
+                <div class="option-card">
+                    <img src="assets/mozaic.png" alt="Mosaikkkunst" />
+                    <h3>Mosaikkkunst</h3>
+                    <p>
+                        Skap vakre mønstre med fargerike glassbiter og fliser.
+                        Passer alle aldre og nivåer.
+                    </p>
+                    <div class="price">649 kr</div>
+                    <p>per deltaker · ca. 3 timer</p>
+                </div>
+
+                <div class="option-card">
+                    <img src="assets/watercolor.png" alt="Akvarellmaling" />
+                    <h3>Akvarellmaling</h3>
+                    <p>
+                        Utforsk vannfargens flyt og transparens. Mal drømmende
+                        bilder med guidet veiledning.
+                    </p>
+                    <div class="price">549 kr</div>
+                    <p>per deltaker · ca. 2,5 timer</p>
+                </div>
+
+                <div class="option-card">
+                    <img src="assets/canvas.png" alt="Lerretsmaling" />
+                    <h3>Lerretsmaling</h3>
+                    <p>
+                        Mal ditt eget mesterverk på lerret med acrylfarger. Ta
+                        det med hjem!
+                    </p>
+                    <div class="price">699 kr</div>
+                    <p>per deltaker · ca. 3,5 timer</p>
+                </div>
+            </div>
+
+            <hr class="divider" />
+
+            <h2>Bestillingsskjema</h2>
+            <form action="">
+            <div class="form-section">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Navn *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Ole Nordmann"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Ole-Nordmann@epost.no"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer *</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+47 000 00 000"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="participants">Antall deltakere *</label>
+                        <input
+                            type="number"
+                            id="participants"
+                            placeholder="1"
+                            min="1"
+                            max="20"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="workshop">Velg workshop *</label>
+                    <select id="workshop" required>
+                        <option value="">– Velg en kunstform –</option>
+                        <option value="Mosaikkkunst">
+                            Mosaikkkunst – 649 kr
+                        </option>
+                        <option value="Akvarellmaling">
+                            Akvarellmaling – 549 kr
+                        </option>
+                        <option value="Lerretsmaling">
+                            Lerretsmaling – 699 kr
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Foretrukket dato *</label>
+                        <input type="date" id="date" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Foretrukket klokkeslett *</label>
+                        <input type="time" id="time" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Spesielle ønsker (valgfritt)</label>
+                    <textarea
+                        id="notes"
+                        placeholder="Allergier, bursdagsfeiring, firmagruppe ..."
+                        maxlength="500"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-green" value="Submit">
+                    Send bestilling
+                </button>
+
+                <div class="confirmation-msg" id="booking-confirm">
+                    Takk for at du bestilte hos CRAFTSVILLA! Vi kontakter deg
+                    snart for å bekrefte plassen din.
+                </div>
+            </div>
+        </div>
+</form>
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>CRAFTSVILLA</h3>
+                    <p>
+                        Vi bringer mennesker sammen gjennom kreativitet. Guidede
+                        kunstopplevelser for alle aldre.
+                    </p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigasjon</h3>
+                    <a href="./index.html">Hjem</a>
+                    <a href="./booking.html">Bestilling</a>
+                    <a href="./gallery.html">Galleri</a>
+                    <a href="./feedback.html">Tilbakemelding</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <p>Kunstgata 12, 2380 Brumunddal</p>
+                    <p>+47 62 34 56 78</p>
+                    <p>hei@craftsvilla.no</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CRAFTSVILLA. Alle rettigheter forbeholdt.</p>
+            </div>
+        </footer>
+    </body>
+</html>

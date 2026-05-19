@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRAFTSVILLA – Galleri</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html" class="logo">CRAFTSVILLA</a>
+            <ul>
+                <li><a href="./index.html">Hjem</a></li>
+                <li><a href="./booking.html">Bestilling</a></li>
+                <li><a href="./gallery.html" class="active">Galleri</a></li>
+                <li><a href="./feedback.html">Tilbakemelding</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Galleri</h1>
+            <p>
+                Bilder fra våre workshops – folk i alle aldre, ferdige kunstverk
+                og gode minner.
+            </p>
+        </div>
+
+        <div class="page">
+            <h2>Utforsk bildene</h2>
+
+            <div class="gallery-grid" id="gallery">
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Deltakere fra mosaikkverkstedet lager vakre glassmønstre."
+                >
+                    <img
+                        src="assets/mozaikbarn.png"
+                        alt="Mosaikkkunst – verksted"
+                    />
+                    <div class="caption">Mosaikkkunst – verksted</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Familier koser seg sammen på en kreativ ettermiddag hos CRAFTSVILLA."
+                >
+                    <img src="assets/tegnerFam.png" alt="Familiedag" />
+                    <div class="caption">Familiedag</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Ferdig akvarellbilde fra helgeverkstedet – blomster og lys."
+                >
+                    <img
+                        src="assets/blomsterCanv.png"
+                        alt="Akvarell – blomster"
+                    />
+                    <div class="caption">Akvarell – blomster</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Lerretsbilde."
+                >
+                    <img
+                        src="assets/canvSol.png"
+                        alt="Lerretsmaling – solnedgang"
+                    />
+                    <div class="caption">Lerretsmaling – solnedgang</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Bedriftsgruppe på teambuilding – alle maler sitt eget bilde."
+                >
+                    <img
+                        src="assets/mazaikSammen.png"
+                        alt="Teambuilding – bedrift"
+                    />
+                    <div class="caption">Teambuilding – bedrift</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Akvarellmaling av et norsk fjordlandskap."
+                >
+                    <img
+                        src="assets/fjordAqua.png"
+                        alt="Akvarell – fjordlandskap"
+                    />
+                    <div class="caption">Akvarell – fjordlandskap</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Abstrakt lerretsbilde fra åpent verksted i april."
+                >
+                    <img
+                        src="assets/abstractCanv.png"
+                        alt="Lerretsmaling – abstrakt"
+                    />
+                    <div class="caption">Lerretsmaling – abstrakt</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Et barn lager sin første mosaikk under familieverkstedet."
+                >
+                    <img
+                        src="assets/mozaikbarn.png"
+                        alt="Mosaikkkunst – barn"
+                    />
+                    <div class="caption">Mosaikkkunst – barn</div>
+                </div>
+
+                <div
+                    class="gallery-item"
+                    onclick="openLightbox(this)"
+                    data-desc="Vennegjeng feirer bursdagen med kunst og godt selskap."
+                >
+                    <img
+                        src="assets/dagenFest.png"
+                        alt="Vennegjeng – bursdag"
+                    />
+                    <div class="caption">Vennegjeng – bursdag</div>
+                </div>
+            </div>
+
+            <hr class="divider" />
+
+            <p>
+                <a href="./booking.html" class="btn btn-green"
+                    >Skap ditt eget mesterverk – bestill her</a
+                >
+            </p>
+        </div>
+
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-inner">
+                <button class="lightbox-close" onclick="closeLightbox()">
+                    ✕
+                </button>
+                <img id="lb-img" src="" alt="" />
+                <p id="lb-desc"></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>CRAFTSVILLA</h3>
+                    <p>
+                        Vi bringer mennesker sammen gjennom kreativitet. Guidede
+                        kunstopplevelser for alle aldre.
+                    </p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigasjon</h3>
+                    <a href="./index.html">Hjem</a>
+                    <a href="./booking.html">Bestilling</a>
+                    <a href="./gallery.html">Galleri</a>
+                    <a href="./feedback.html">Tilbakemelding</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <p>Kunstgata 12, 2380 Brumunddal</p>
+                    <p>+47 62 34 56 78</p>
+                    <p>hei@craftsvilla.no</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CRAFTSVILLA. Alle rettigheter forbeholdt.</p>
+            </div>
+        </footer>
+
+        <script>
+            function openLightbox(el) {
+                let img = el.querySelector("img");
+                document.getElementById("lb-img").src = img.src;
+                document.getElementById("lb-desc").textContent =
+                    el.dataset.desc;
+                document.getElementById("lightbox").classList.add("open");
+            }
+
+            function closeLightbox() {
+                document.getElementById("lightbox").classList.remove("open");
+            }
+
+            document
+                .getElementById("lightbox")
+                .addEventListener("click", function (e) {
+                    if (e.target === this) closeLightbox();
+                });
+        </script>
+    </body>
+</html>
